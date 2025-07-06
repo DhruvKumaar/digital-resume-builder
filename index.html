@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="builder">
+    <div class="form-area">
+      <h1>Resume Builder</h1>
+      <form id="resumeForm">
+        <h2>Personal Information</h2>
+        <input type="text" id="name" placeholder="Full Name *" required />
+        <input type="email" id="email" placeholder="Email *" required />
+        <input type="text" id="phone" placeholder="Phone Number *" required />
+        <input type="text" id="address" placeholder="Address" />
+        <textarea id="summary" placeholder="Professional Summary"></textarea>
+
+        <h2>Education</h2>
+        <div id="educationSection">
+          <input type="text" class="edu" placeholder="Degree / Institution" required />
+        </div>
+        <div class="row-btn">
+          <button type="button" class="add" onclick="addEducation()">Add Education</button>
+          <button type="button" class="remove" onclick="removeEducation()">Remove Education</button>
+        </div>
+
+        <h2>Experience</h2>
+        <div id="experienceSection">
+          <input type="text" class="exp" placeholder="Job Title at Company" required />
+        </div>
+        <div class="row-btn">
+          <button type="button" class="add" onclick="addExperience()">Add Experience</button>
+          <button type="button" class="remove" onclick="removeExperience()">Remove Experience</button>
+        </div>
+
+        <h2>Skills</h2>
+        <div id="skillsSection">
+          <input type="text" class="skill" placeholder="Skill *" required />
+        </div>
+        <div class="row-btn">
+          <button type="button" class="add" onclick="addSkill()">Add Skill</button>
+          <button type="button" class="remove" onclick="removeSkill()">Remove Skill</button>
+        </div>
+
+        <button class="download" type="button" onclick="downloadPDF()">Download Resume as PDF</button>
+      </form>
+    </div>
+
+    <div class="preview-area">
+      <h2>Live Preview</h2>
+      <div id="resumePreview" class="resume-card">
+        <h1 id="prevName">Your Name</h1>
+        <p id="prevContact">your.email@example.com | (123) 456-7890</p>
+        <p id="prevAddress"></p>
+        <hr>
+        <p id="prevSummary">Brief summary goes here.</p>
+        <h3>Education</h3>
+        <ul id="prevEducation"><li>No education added yet.</li></ul>
+        <h3>Experience</h3>
+        <ul id="prevExperience"><li>No experience added yet.</li></ul>
+        <h3>Skills</h3>
+        <ul id="prevSkills"><li>No skills added yet.</li></ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

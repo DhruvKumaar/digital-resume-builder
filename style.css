@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #8360c3, #2ebf91);
+}
+
+.builder {
+  display: flex;
+  padding: 30px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.form-area, .preview-area {
+  flex: 1 1 45%;
+  background: #f9f9f9;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+
+.form-area h1 {
+  color: #6a1b9a;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h2 {
+  color: #333;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-top: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  resize: vertical;
+  height: 80px;
+}
+
+button {
+  padding: 10px 16px;
+  margin: 5px 0;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.add {
+  background: #4caf50;
+  color: white;
+}
+
+.remove {
+  background: #f44336;
+  color: white;
+  margin-left: 10px;
+}
+
+.download {
+  width: 100%;
+  background: linear-gradient(to right, #7b1fa2, #512da8);
+  color: white;
+  margin-top: 20px;
+}
+
+.preview-area h2 {
+  text-align: center;
+  color: #333;
+}
+
+.resume-card {
+  background: white;
+  padding: 25px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.resume-card h1 {
+  margin: 0;
+  color: #222;
+}
+
+.resume-card p, ul {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.resume-card h3 {
+  margin-top: 20px;
+  color: #4a148c;
+}
